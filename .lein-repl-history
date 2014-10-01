@@ -1,0 +1,27 @@
+(def MAX_BITS 256)
+(count (filter true? (map #(bit-test n %) (range 0 MAX_BITS))))
+(count (filter true? (map #(bit-test 8 %) (range 0 MAX_BITS)))
+)
+(count (filter true? (map #(bit-test 8 %) (range 0 MAX_BITS))))
+ (map #(bit-test 8 %) (range 0 MAX_BITS))
+ (filter true? (map #(bit-test 8 %) (range 0 MAX_BITS)))
+ (filter true? (map #(bit-test 8 %) (range 0 10)))
+ (filter true? (map #(bit-test 8 %) (range 0 32)))
+(defn population_count 
+  [n]
+  (let [MAX_BITS 32]
+  (count (filter true? (map #(bit-test n %) (range 0 MAX_BITS))))))
+(population_count 8)
+(population_count 9)
+(population_count 15)
+(population_count 19)
+#(map #(println "(population_count " n ") = "  (population_count n) '(8 9 15 19))
+(map #(println "(population_count " n ") = "  (population_count n) '(8 9 15 19)))
+ (map #(println "(population_count " % ") = "  (population_count %) '(8 9 15 19)))
+ (map #(println "(population_count " % ") = "  (population_count %)) '(8 9 15 19))
+map #(println "(population_count" % ") = "  (population_count %)) '(0 8 15 19))
+map #(println "(population_count" % ") = "  (population_count %)) '(0 8 15 19)
+(map #(println "(population_count" % ") = "  (population_count %)) '(0 8 15 19))
+(conj '(1 2) '(3 5))
+(conj nil '(3 5))
+gs
